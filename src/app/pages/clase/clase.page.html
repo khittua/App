@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Clase Registrada!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="flex">
+    <h4>Datos Clase</h4>
+  </div>
+  
+
+  <ion-item *ngFor="let item of datosClase.split(',')">
+    {{ item.trim() }}
+  </ion-item>
+  <div class="flex">
+    <h4>Datos Alumno</h4>
+  </div>
+  <ion-item>
+    Nombre: {{ nombre }} {{ apellido }} 
+  </ion-item>
+  <ion-item>
+    Rut: {{ rut }}  
+  </ion-item>
+  <div class="flex">
+    <h4>Hora: {{ formatTimestamp(timestampCarga) }}</h4>
+  </div>
+</ion-content>

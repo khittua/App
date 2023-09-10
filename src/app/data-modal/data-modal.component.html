@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="flex">
+      <ion-icon size="large" name="arrow-back-circle-outline" (click)="closeModal()"></ion-icon>
+      <ion-title>
+        Datos
+      </ion-title>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+  <ion-list>
+    <ion-item>
+      <ion-label>Su nombre es: {{ nombre }} {{ apellido }}</ion-label>
+    </ion-item>
+  </ion-list>
+  </div>
+  
+</ion-content>
