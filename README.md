@@ -14,5 +14,7 @@ Para pasar los datos del qr a la otra página de confirmación, ocupé el enruta
 Cuándo se registra la clase, se muestran los datos de esta, los datos del alumno, y se muestra la hora a la que se scanneó el QR
 
 npm i @zxing/browser@latest --save
+
 npm i @zxing/library@latest --save
+
 npm i @zxing/ngx-scanner@latest --save
