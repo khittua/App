@@ -20,7 +20,9 @@ export class ClasePage implements OnInit {
     return `${hours}:${minutes}`;
   }
   constructor(private router: Router,private route: ActivatedRoute) { }
-
+  goToLogin() {
+    this.router.navigate(['/login']);
+  }
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.datosClase = params['datosClase'];
